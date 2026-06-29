@@ -37,6 +37,12 @@ is the part of the algorithm that the side-channel literature keeps poking at.
 A naïve implementation can leak secret-dependent information through timing or
 power. So we don't just say "it signs." We test it.
 
+> **Standards note:** FN-DSA is **not yet a finalized FIPS standard** (FIPS 206 is
+> still in development). This work validates an open *reference implementation* — it
+> is **not** a claim of FIPS validation. For general-purpose signing today, NIST's
+> long-term default is **ML-DSA (FIPS 204)**; hybrid/dual (classical + PQC) signing
+> remains an operational risk-mitigation pattern, **not a NIST-standardized profile**.
+
 ---
 
 ## The validation checklist (8 artifacts)
